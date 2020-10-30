@@ -7,31 +7,49 @@ img{
 }
 
 .dot{
+    margin: 0.2em;
     background-color:rgba(0, 0, 0, 0.5);
-    height: 1.5em;
-    width: 1.5em;
+    height: 1.25em;
+    width: 1.25em;
     display: inline-block;
     border-radius: 50%;
     cursor: pointer;
 }
 
-#next{
+#next, #previous{
     position: absolute;
     top:50%;
     background-color: rgba(0, 0, 0, 0.5);
     color: whitesmoke;
-    padding: .75em;
+    padding: 1em;
 }
 
 #previous{
-    top:50%;
     right: 0;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: whitesmoke;
-    padding: .75em;
 }
 
-#controls span{
-    margin: 0.5em;
+#controls{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#carousel-container {
+    position: relative;
+    margin: auto;
+    max-width: 50vw;
+}
+
+.caption {
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.caption a {
+    color: rgb(0, 195, 255);
 }

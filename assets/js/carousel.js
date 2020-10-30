@@ -21,6 +21,8 @@ const images = [
     },
 ];
 
+
+
 /**
  * Afficher la slide à l'index slideIndex
  */
